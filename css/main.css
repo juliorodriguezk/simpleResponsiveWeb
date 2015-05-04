@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  video#bgvid {
+    display: none; } }
+@media (min-width: 768px) {
+  video#bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url("../media/img/background-video.png") no-repeat;
+    background-size: cover; } }
+
+/*# sourceMappingURL=main.css.map */

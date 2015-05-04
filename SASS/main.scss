@@ -1,0 +1,9 @@
+@import 'importer';
+video#bgvid {
+	@include media("<tablet") { 
+		display: none;
+	}
+	@include media(">=tablet") { 
+	@include bgVideo($media-folder+$images-folder+$background-video-img);
+	}	 
+}
