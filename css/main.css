@@ -1,17 +1,38 @@
-@media (max-width: 767px) {
-  video#bgvid {
-    display: none; } }
-@media (min-width: 768px) {
-  video#bgvid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background: url("../media/img/background-video.png") no-repeat;
-    background-size: cover; } }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-Regular.ttf); }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-ExtraLight.ttf);
+  font-weight: 200; }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-Light.ttf);
+  font-weight: 300; }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-Medium.ttf);
+  font-weight: 500; }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-SemiBold.ttf);
+  font-weight: 600; }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-Bold.ttf);
+  font-weight: 700; }
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-Black.ttf);
+  font-weight: 900; }
+html {
+  background: url("../media/img/background-madrid.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Source Code Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

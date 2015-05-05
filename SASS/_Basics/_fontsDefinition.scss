@@ -1,5 +1,5 @@
 //Fonts
-$font-stack:    Helvetica, sans-serif;
+$font-stack: 'Source Code Pro', Helvetica, sans-serif;
 //Sizes
 $font-basic: 1rem;
 $font-giant: $font-basic * 2;
@@ -8,7 +8,44 @@ $font-big: $font-basic * 1.25; //16px
 $font-small: $font-basic * 0.5;
 $font-medium: $font-basic * 0.75;
 //Colors
-$primary-font-color: #000;
-$secondary-font-color: #fff;
+$primary-font-color: #fff;
+$secondary-font-color: #000;
 $error-font-color: #f00;
 $success-font-color: #0f0;
+
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-ExtraLight.ttf);
+    font-weight: 200;    
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-Light.ttf);
+    font-weight: 300;    
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-Medium.ttf);
+    font-weight: 500;    
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-SemiBold.ttf);
+    font-weight: 600;    
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-Bold.ttf);
+    font-weight: 700;    
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(../media/fonts/sourcecodepro/SourceCodePro-Black.ttf);
+    font-weight: 900;    
+}

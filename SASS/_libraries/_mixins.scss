@@ -10,3 +10,20 @@
     background: url($videoBg) no-repeat;
     background-size: cover;
 }
+
+@mixin bgImage($image: false) {
+    @if $image {
+        background: url($image) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    @else{
+        background: $primary-color no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

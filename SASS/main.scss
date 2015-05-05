@@ -1,9 +1,28 @@
 @import 'importer';
-video#bgvid {
-	@include media("<tablet") { 
-		display: none;
-	}
-	@include media(">=tablet") { 
-	@include bgVideo($media-folder+$images-folder+$background-video-img);
-	}	 
+$bg-video-enabled: false;
+//Should be enabled bgvid in hml5 body
+@if $bg-video-enabled {
+    video#bgvid {
+        @include media("<tablet") {
+            display: none;
+        }
+        @include media(">=tablet") {
+            @include bgVideo($media-folder+$images-folder+$background-video-img);
+        }
+    }
 }
+
+@else {
+    html {
+    	@if $background-img{
+        	@include bgImage($media-folder+$images-folder+$background-img);
+        }
+        @else{
+        @include bgImage();	
+        }
+        font-family: $font-stack;
+        font-size: $font-basic;
+        color: $primary-font-color;
+    }
+}
+
