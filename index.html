@@ -7,23 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Example webpage</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body>
-	<!--
+    <!--
     <video id="bgvid" autoplay loop >
         <source src="media/video/v1.mp4" type="video/mp4">
     </video>
     -->
+	<div id="bg">
+  		<img src="media/img/background-madrid.png" alt="">
+	</div>    
     <header>
-        <h1>Julio Rodríguez</h1>
-        <div>
-        	<ul>
-        	<li>facebook</li>
-        	<li>twitter</li>
-        	<li>github</li>
-        	<li>email</li>        	        	        	
-        	</ul>
+        <div id="social-container">
+            <ul id="social-menu">
+                <li>
+                    <a class="list-group-item" href="#">
+                        <span class="fa-stack fa-lg">
+                        	<i class="fa fa-circle fa-stack-2x fa-bg"></i>
+                        	<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+ 						</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item" href="#">
+                        <span class="fa-stack fa-lg">
+                        	<i class="fa fa-circle fa-stack-2x fa-bg"></i>
+                        	<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+ 						</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item" href="#">
+                        <span class="fa-stack fa-lg">
+                        	<i class="fa fa-circle fa-stack-2x fa-bg"></i>
+                        	<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+ 						</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item" href="#">
+                        <span class="fa-stack fa-lg">
+                        	<i class="fa fa-circle fa-stack-2x fa-bg"></i>
+                        	<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+ 						</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item" href="#">
+                        <span class="fa-stack fa-lg">
+                        	<i class="fa fa-circle fa-stack-2x fa-bg"></i>
+                        	<i class="fa fa-skype fa-stack-1x fa-inverse"></i>
+ 						</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item" href="#">
+                        <span class="fa-stack fa-lg">
+                        	<i class="fa fa-circle fa-stack-2x fa-bg"></i>
+                        	<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+ 						</span>
+                    </a>
+                </li>                
+            </ul>
         </div>
     </header>
     <nav id="main-menu">
@@ -35,11 +82,11 @@
         </ul>
     </nav>
     <div id="main-container">
-		<section id='home'></section>
-		<section id='curriculum'></section>
-		<section id='interests'></section>
-		<section id='articles'></section>
-	</div>
+        <section id='home'></section>
+        <section id='curriculum'></section>
+        <section id='interests'></section>
+        <section id='articles'></section>
+    </div>
     <footer>
         Copyright ©
     </footer>
