@@ -1,5 +1,5 @@
 //Fonts
-$font-stack: 'Source Code Pro', Helvetica, sans-serif;
+$font-stack: 'Roboto', 'Source Code Pro', Helvetica, sans-serif;
 //Sizes
 $font-basic: 1rem;
 $font-giant: $font-basic * 2;
@@ -48,4 +48,75 @@ $success-font-color: #0f0;
     font-family: 'Source Code Pro';
     src: url(../media/fonts/sourcecodepro/SourceCodePro-Black.ttf);
     font-weight: 900;    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Thin.ttf);
+    font-weight: 100;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-ThinItalic.ttf);
+    font-weight: 100;  
+    font-style: italic;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Light.ttf);
+    font-weight: 300;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-LightItalic.ttf);
+    font-weight: 300;  
+    font-style: italic;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Regular.ttf);
+    font-weight: 400;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-italic.ttf);
+    font-weight: 400;  
+    font-style: italic;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Medium.ttf);
+    font-weight: 500;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-MediumItalic.ttf);
+    font-weight: 500;  
+    font-style: italic;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Bold.ttf);
+    font-weight: 700;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-BoldItalic.ttf);
+    font-weight: 700;  
+    font-style: italic;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-Black.ttf);
+    font-weight: 900;  
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../media/fonts/roboto/Roboto-BlackItalic.ttf);
+    font-weight: 900;  
+    font-style: italic;  
 }

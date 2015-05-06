@@ -13,17 +13,11 @@
 
 @mixin bgImage($image: false) {
     @if $image {
-        background: url($image) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+      background: url($image) center center no-repeat fixed;
+      background-size: cover;
     }
     @else{
-        background: $primary-color no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+      background: $primary-color center center no-repeat fixed;
+      background-size: cover;      
     }
 }
