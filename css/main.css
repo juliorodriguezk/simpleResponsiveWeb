@@ -1,167 +1,240 @@
 @font-face {
   font-family: 'Source Code Pro';
-  src: url(../media/fonts/sourcecodepro/SourceCodePro-Regular.ttf); }
+  src: url(../media/fonts/sourcecodepro/SourceCodePro-Regular.ttf);
+}
 @font-face {
   font-family: 'Source Code Pro';
   src: url(../media/fonts/sourcecodepro/SourceCodePro-ExtraLight.ttf);
-  font-weight: 200; }
+  font-weight: 200;
+}
 @font-face {
   font-family: 'Source Code Pro';
   src: url(../media/fonts/sourcecodepro/SourceCodePro-Light.ttf);
-  font-weight: 300; }
+  font-weight: 300;
+}
 @font-face {
   font-family: 'Source Code Pro';
   src: url(../media/fonts/sourcecodepro/SourceCodePro-Medium.ttf);
-  font-weight: 500; }
+  font-weight: 500;
+}
 @font-face {
   font-family: 'Source Code Pro';
   src: url(../media/fonts/sourcecodepro/SourceCodePro-SemiBold.ttf);
-  font-weight: 600; }
+  font-weight: 600;
+}
 @font-face {
   font-family: 'Source Code Pro';
   src: url(../media/fonts/sourcecodepro/SourceCodePro-Bold.ttf);
-  font-weight: 700; }
+  font-weight: 700;
+}
 @font-face {
   font-family: 'Source Code Pro';
   src: url(../media/fonts/sourcecodepro/SourceCodePro-Black.ttf);
-  font-weight: 900; }
+  font-weight: 900;
+}
 @font-face {
   font-family: 'Roboto';
-  src: url(../media/fonts/roboto/Roboto-Regular.ttf); }
+  src: url(../media/fonts/roboto/Roboto-Regular.ttf);
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-Thin.ttf);
-  font-weight: 100; }
+  font-weight: 100;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-ThinItalic.ttf);
   font-weight: 100;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-Light.ttf);
-  font-weight: 300; }
+  font-weight: 300;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-LightItalic.ttf);
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-Regular.ttf);
-  font-weight: 400; }
+  font-weight: 400;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-italic.ttf);
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-Medium.ttf);
-  font-weight: 500; }
+  font-weight: 500;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-MediumItalic.ttf);
   font-weight: 500;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-Bold.ttf);
-  font-weight: 700; }
+  font-weight: 700;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-BoldItalic.ttf);
   font-weight: 700;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-Black.ttf);
-  font-weight: 900; }
+  font-weight: 900;
+}
 @font-face {
   font-family: 'Roboto';
   src: url(../media/fonts/roboto/Roboto-BlackItalic.ttf);
   font-weight: 900;
-  font-style: italic; }
+  font-style: italic;
+}
+/* line 4, ../sass/main.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 9, ../sass/main.scss */
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* line 15, ../sass/main.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 32, ../sass/main.scss */
 body {
   height: 100%;
   width: 100%;
   margin: 0;
   background: url("../media/img/background-madrid.png") center center no-repeat fixed;
-  background-size: cover; }
+  background-size: cover;
+}
 
+/* line 38, ../sass/main.scss */
 html {
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: "Roboto", "Source Code Pro", Helvetica, sans-serif;
   font-size: 1rem;
-  color: #fff; }
-  html a {
-    color: inherit;
-    text-decoration: none; }
-  @media (min-width: 768px) {
-    html header {
-      border-bottom: 1px solid #fff;
-      min-height: 5em; }
-      html header #mobile-menu {
-        display: none; }
-      html header #author-name {
-        max-width: 35%;
-        float: left;
-        max-height: 2.6em;
-        font-size: 2.48rem;
-        font-weight: 300;
-        margin: 2rem 0 0 5%; } }
-  @media (max-width: 767px) {
-    html header #mobile-menu {
-      float: left; }
-    html header #author-name {
-      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjY0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc3JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-      background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.64) 1%, transparent 77%, transparent 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(1%, rgba(0, 0, 0, 0.64)), color-stop(77%, transparent), color-stop(100%, transparent));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.64) 1%, transparent 77%, transparent 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.64) 1%, transparent 77%, transparent 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.64) 1%, transparent 77%, transparent 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.64) 1%, transparent 77%, transparent 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
-      /* IE6-8 fallback on horizontal gradient */
-      max-width: 98%;
-      float: left;
-      max-height: 1.6em;
-      font-size: 1.48rem;
-      font-weight: 300;
-      margin: 0.5rem 0 0 0.5rem; } }
+  color: #fff;
+}
+/* line 42, ../sass/main.scss */
+html #wrapper {
+  max-width: 1200px;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  /* line 49, ../sass/main.scss */
+  html header {
+    border-bottom: 1px solid #fff;
+    min-height: 5rem;
+  }
+  /* line 52, ../sass/main.scss */
+  html header #mobile-menu {
+    display: none;
+  }
+  /* line 55, ../sass/main.scss */
+  html header #author-name {
+    max-width: 35%;
+    float: left;
+    max-height: 2.6em;
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin: 2rem 0 0 5%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 66, ../sass/main.scss */
+  html header {
+    border-bottom: 1px solid #fff;
+    min-height: 3rem;
+  }
+  /* line 69, ../sass/main.scss */
+  html header #mobile-menu {
+    float: left;
+  }
+  /* line 72, ../sass/main.scss */
+  html header #author-name {
+    max-width: 98%;
+    float: left;
+    max-height: 1.6em;
+    font-size: 1.48rem;
+    font-weight: 300;
+    margin: 0.5rem 0 0 0.5rem;
+  }
+}
 
 @media (min-width: 768px) {
+  /* line 88, ../sass/main.scss */
   div#social-container {
     float: right;
     max-width: 65%;
     overflow: hidden;
     height: 2.6em;
-    margin: 2em 5% 0 0; }
-    div#social-container ul {
-      list-style-type: none;
-      margin: 0 !important; }
-    div#social-container ul > li {
-      float: left; } }
-@media (min-width: 220px) and (max-width: 767px) {
+    margin: 2em 5% 0 0;
+  }
+  /* line 95, ../sass/main.scss */
+  div#social-container ul {
+    list-style-type: none;
+    margin: 0 !important;
+  }
+  /* line 99, ../sass/main.scss */
+  div#social-container ul > li {
+    float: left;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  /* line 88, ../sass/main.scss */
   div#social-container {
     float: right;
     overflow: hidden;
     max-width: 2.6em;
-    margin: 0 2%; }
-    div#social-container ul {
-      list-style-type: none;
-      padding: 0; } }
+    margin: 2rem 2%;
+  }
+  /* line 108, ../sass/main.scss */
+  div#social-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
 @media (min-width: 0em) and (max-width: 219px) {
+  /* line 88, ../sass/main.scss */
   div#social-container {
-    display: none; } }
+    display: none;
+  }
+}
 
-/*# sourceMappingURL=main.css.map */
+/* line 118, ../sass/main.scss */
+div#main-container {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 100%;
+}
